@@ -1,0 +1,441 @@
+.section__heading {
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.section__typelist {
+    width: 100%;
+    background: #fff;
+    padding: 10px 50px;
+    border-radius: 999px;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.section__typeitem {
+    padding: 10px;
+    text-align: center;
+    cursor: poiner;
+    margin: 0 auto;
+}
+
+.section__typeitem {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.section__typelist img {
+    width: 30px;
+}
+
+.section__typeitem:hover>img {
+    transform: translateY(10px) scale(1.5);
+}
+
+.section__typeitem:hover>p {
+    visibility: hidden;
+}
+
+.section__productlist{
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;    
+    border: 1px solid #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10 0px;
+}
+
+.section__card{
+    width: 18%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.section__card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  border: 2px solid #007bff; 
+  background-color: #f8f9fa;
+}
+
+.section__img{
+    width: 80%;
+}
+
+.section__img img{
+    width: 100%;
+}
+
+.section__name{
+    margin: 10px 0;
+    min-height: 50px;
+    text-align: center;
+}
+
+.section__price{
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.section__detail,
+.section__addcart{
+    width: 100%;
+    background: #eee;
+    padding: 8px;
+    border-radius: 10px;
+    color: #666;
+    text-align: center;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.section__detail:hover,
+.section__addcart:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.section__prdetail,
+.section__addcart {
+    display: none;
+}
+
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    cursor: pointer;
+    display: none;
+}
+ 
+.section__card.active {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    z-index: 2;
+    width: 20%;
+    padding: 20px;
+    animation: appear 0.3s;
+}
+
+.section__card.active .section__detail {
+    display: none;
+}
+
+.section__card.active .section__prdetail,
+.section__card.active .section__addcart {
+    display: block;
+}
+
+.section__card.active .section__name,
+.section__card.active .section__price {
+    margin: 0;
+    min-height: unset;
+    align-self: start;
+    font-weight: 600;
+}
+
+.section__card.active .section__img {
+    width: 100%;
+}
+
+.section__card.active .section__img img {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+}
+
+.section__card.active .section__prdetail {
+    align-self: start;
+    margin: 10px 0;
+}
+
+@keyframes appear {
+    from {
+        transform:  translate(-50%, -45%);
+        to {
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+/*slide*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 60%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ffd700;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.footer-section ul li span {
+  margin-right: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #ffd700;
+}
+
+.footer-btn {
+  background-color: #ffd700;
+  border: none;
+  padding: 10px 20px;
+  color: #1a1a1a;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-btn:hover {
+  background-color: #e6c200;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  margin-top: 20px;
+}
+
+.privacy-policy {
+  color: #ffd700;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.privacy-policy:hover {
+  text-decoration: underline;
+}
+
+/* Font Awesome icons (if not already included) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Loginnnn */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  position: relative;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-icon {
+  margin-bottom: 20px;
+}
+
+.form-icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 3px #f39c12, 0 0 0 6px #3498db;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.forgot-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.form-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #b3e02b;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.form-btn:hover {
+  background-color: #a1c925;
+}
+
+.auth-buttons {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons button {
+  padding: 8px 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-buttons button:hover {
+  background-color: #2980b9;
+}

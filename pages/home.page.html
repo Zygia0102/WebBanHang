@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/scripts/home.js" defer></script>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Trang chủ</title>
+</head>
+<body>
+    <div id="overlay"></div>
+    <header>
+        <h2> Lap Store  <i class="fa-solid fa-laptop"></i></h2>
+        <div class=" search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type=" search" placeholder="Tìm kiếm ....">
+        </div>
+        <nav>
+            <a href="/pages/home.page.html" class="active">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="/pages/cart.page.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>  
+        </nav>
+
+        <div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="form-container">
+      <div class="form-icon">
+        <img src="/imagines/1.ong.PNG" alt="User Icon">
+      </div>
+      <form id="loginForm">
+        <input type="text" id="loginUsername" placeholder="username" required>
+        <div class="password-container">
+          <input type="password" id="loginPassword" placeholder="password" required>
+          <a href="#" class="forgot-password">forgot? *</a>
+        </div>
+        <button type="submit" class="form-btn">Sign in</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Đăng ký -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="form-container">
+      <div class="form-icon">
+        <img src="/imagines/1.ong.PNG" alt="User Icon">
+      </div>
+      <form id="registerForm">
+        <input type="text" id="registerUsername" placeholder="username" required>
+        <input type="password" id="registerPassword" placeholder="password" required>
+        <input type="password" id="confirmPassword" placeholder="confirm password" required>
+        <button type="submit" class="form-btn">Register</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="auth-buttons">
+  <button id="openLoginModal">Login</button>
+  <button id="openRegisterModal">Register</button>
+</div>
+    </header>
+
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="/imagines/banner/slide1.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="/imagines/banner/slide2.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="/imagines/banner/slide3.jpg" style="width:100%">
+    </div>
+  
+      <div class="mySlides fade">
+        <img src="/imagines/banner/slide4.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/imagines/banner/slide5.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/imagines/banner/slide6.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/imagines/banner/slide7.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/imagines/banner/slide8.jpg" style="width:100%">
+       </div>
+       
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+  </div>
+
+
+<!-- Sản Phẩm -->
+    <main>
+        <div class="section">
+        <div class="section__heading">Loại sản phẩm</div>
+            <div class="section__typelist">
+                <div class="section__typeitem" type="all">
+                <img src="/imagines/all.jpg" alt="">
+                <p>Tất cả</p>
+            </div>
+
+            <div class="section__typeitem" type="ai">
+                <img src="/imagines/lap-ai.jpg" alt="">
+                <p>AI</p>
+            </div>
+
+            <div class="section__typeitem" type="ga">
+                <img src="/imagines/lap-gaming.jpg" alt="">
+                <p>Gaming- Đồ Họa</p>
+            </div>
+
+            <div class="section__typeitem" type="sv">
+                <img src="/imagines/lap-vp.jpg" alt="">
+                <p> Văn Phòng-Sinh viên</p>
+            </div>
+
+            <div class="section__typeitem" type="dn">
+                <img src="/imagines/lap-doanh.jpg" alt="">
+                <p>Doanh Nhân</p>
+            </div>
+
+            <div class="section__typeitem" type="mn">
+                <img src="/imagines/lap-mong.jpg" alt="">
+                <p>Mỏng Nhẹ</p>
+            </div>    
+        </div>
+        </div>
+
+        <div class="section">
+            <div class="section__heading"> Sản phẩm nổi bật</div>
+            <div class="section__productlist">
+                <div class="section__card" type="ai">
+                    <div class="section__img">
+                        <img src="/imagines/ai1.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop Asus Vivobook 14
+                    </div>
+                    <div class="section__price">
+                        20.490.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong>    Ultra 5 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  16GB <br>
+                        <strong> Card Đồ Họa: </strong> Intel Arc Graphics <br>
+                        <strong>Kích thước: </strong> 31.52 x 22.34 x 1.79 ~ 1.79 cm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+
+                <div class="section__card" type="ai">
+                    <div class="section__img">
+                        <img src="/imagines/ai2.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop Lenovo Gaming LOQ
+                    </div>
+                    <div class="section__price">
+                        20.490.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong>    Core i5 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  12GB <br>
+                        <strong> Card Đồ Họa: </strong> NVIDIA GeForce RTX 3050 6GB GDDR6 <br>
+                        <strong>Kích thước: </strong> 359.86 x 258.7 x 21.9-23.9 mm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+                <div class="section__card" type="ai">
+                    <div class="section__img">
+                        <img src="/imagines/ai3.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop Asus Vivobook 16
+                    </div>
+                    <div class="section__price">
+                        19.990.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong> Ryzen AI 7 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  16GB <br>
+                        <strong> Card Đồ Họa: </strong> AMD Radeon Graphics <br>
+                        <strong>Kích thước: </strong> 35.70 x 25.06 x 1.79 ~ 1.99 cm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+<!-- Thiếu 1 sp của AI: ai4-->
+
+                <div class="section__card" type="ai">
+                    <div class="section__img">
+                        <img src="/imagines/ai5.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop Asus Vivobook S16
+                    </div>
+                    <div class="section__price">
+                        25.990.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong> Ultra 7 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  16GB <br>
+                        <strong> Card Đồ Họa: </strong> Intel Arc Graphics <br>
+                        <strong>Kích thước: </strong> 35.36 x 24.69 x 1.39 ~ 1.59 cm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+
+                <div class="section__card" type="ga">
+                    <div class="section__img">
+                        <img src="/imagines/ga1.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop Asus TUF Gaming A15
+                    </div>
+                    <div class="section__price">
+                        19.490.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong> Ryzen 7 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  16GB <br>
+                        <strong> Card Đồ Họa: </strong> NVIDIA GeForce RTX 3050 4GB <br>
+                        <strong>Kích thước: </strong> 35.9 x 25.6 x 2.28 ~ 2.45 cm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+                
+                <div class="section__card" type="ga">
+                    <div class="section__img">
+                        <img src="/imagines/ga2.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop Lenovo Gaming LOQ
+                    </div>
+                    <div class="section__price">
+                        18.490.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong> Core i5 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  16GB <br>
+                        <strong> Card Đồ Họa: </strong> NVIDIA GeForce RTX 2050 4GB <br>
+                        <strong>Kích thước: </strong> 359.86 x 258.7 x 21.9-23.9 mm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+
+                <div class="section__card" type="ga">
+                    <div class="section__img">
+                        <img src="/imagines/ga3.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop MSI Gaming Katana 15
+                    </div>
+                    <div class="section__price">
+                        21.990.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong> Core i5 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  16GB <br>
+                        <strong> Card Đồ Họa: </strong> NVIDIA GeForce RTX 3050 6GB <br>
+                        <strong>Kích thước: </strong> 359 x 259 24.9 mm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+
+                <div class="section__card" type="ga">
+                    <div class="section__img">
+                        <img src="/imagines/ga4.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop MSI Gaming Thin A15
+                    </div>
+                    <div class="section__price">
+                        17.290.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong> Ryzen 5 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  16GB <br>
+                        <strong> Card Đồ Họa: </strong> NVIDIA GeForce RTX 3050 6GB <br>
+                        <strong>Kích thước: </strong> 359 x 254 x21.7 mm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+
+                <div class="section__card" type="ga">
+                    <div class="section__img">
+                        <img src="/imagines/ga5.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop Asus Gaming Vivobook
+                    </div>
+                    <div class="section__price">
+                        17.490.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong> Core i5 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  16GB <br>
+                        <strong> Card Đồ Họa: </strong> NVIDIA GeForce RTX 3050 4GB <br>
+                        <strong>Kích thước: </strong> 35.86 x 24.91 x 1.89 ~ 1.89 cm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+
+                <div class="section__card"  type="sv">
+                    <div class="section__img">
+                        <img src="/imagines/sv1.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop HP 14s
+                    </div>
+                    <div class="section__price">
+                        12.790.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong> Ryzen 5 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  16GB <br>
+                        <strong> Card Đồ Họa: </strong> AMD Radeon Graphics <br>
+                        <strong>Kích thước: </strong> 32.37 x 21.5 x 1.79 cm 
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+
+                <div class="section__card" type="sv">
+                    <div class="section__img">
+                        <img src="/imagines/sv2.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop HP 245 G10
+                    </div>
+                    <div class="section__price">
+                        11.990.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong> Ryzen 5 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  16GB <br>
+                        <strong> Card Đồ Họa: </strong> AMD Radeon Graphics <br>
+                        <strong>Kích thước: </strong> 32.4 x 21.5 x 1.79 cm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+
+                <div class="section__card" type="sv">
+                    <div class="section__img">
+                        <img src="/imagines/sv3.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop Dell Inspiron
+                    </div>
+                    <div class="section__price">
+                        18.990.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong> Core i5 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  16GB <br>
+                        <strong> Card Đồ Họa: </strong> Intel Iis Xe Graphics <br>
+                        <strong>Kích thước: </strong> 358.5 x 235.56 x 18.99 mm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+
+                <div class="section__card" type="sv">
+                    <div class="section__img">
+                        <img src="/imagines/sv4.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop Acer Aspire Lite 15
+                    </div>
+                    <div class="section__price">
+                        12.990.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong> Ryzen 7 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  16GB <br>
+                        <strong> Card Đồ Họa: </strong> AMD Redeon Graphics <br>
+                        <strong>Kích thước: </strong> 358.6 x 232.7 x 18.95 mm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+
+                <div class="section__card" type="sv">
+                    <div class="section__img">
+                        <img src="/imagines/sv5.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop Acer Aspire Lite
+                    </div>
+                    <div class="section__price">
+                        14.090.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong> Core i5 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  16GB <br>
+                        <strong> Card Đồ Họa: </strong> Intel UHD Graphics <br>
+                        <strong>Kích thước: </strong> 36.02 x 23.4 x 1.8 cm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+
+                <div class="section__card" type="mn">
+                    <div class="section__img">
+                        <img src="/imagines/mn1.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop HP Pavilion 15
+                    </div>
+                    <div class="section__price">
+                        17.490.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong> Core i5 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  16GB <br>
+                        <strong> Card Đồ Họa: </strong> Intel Iris Xe Graphics <br>
+                        <strong>Kích thước: </strong> 35.68 x 22.76 x 1.99 cm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+
+                <div class="section__card" type="mn">
+                    <div class="section__img">
+                        <img src="/imagines/mn2.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop Asus Vivobook 15 
+                    </div>
+                    <div class="section__price">
+                        18.990.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong> Ultra 5 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  16GB <br>
+                        <strong> Card Đồ Họa: </strong> Intel Arc Graphics <br>
+                        <strong>Kích thước: </strong> 31.52 x 22.34 x 1.79 cm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+
+                <div class="section__card" type="mn">
+                    <div class="section__img">
+                        <img src="/imagines/mn3.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop Asus Vivobook 14
+                    </div>
+                    <div class="section__price">
+                        20.490.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong> Core i5 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  16GB <br>
+                        <strong> Card Đồ Họa: </strong> Intel Iris Xe Graphics <br>
+                        <strong>Kích thước: </strong> 31.71 x 22.20 x 1.99 ~ 1.99 cm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+
+                <div class="section__card" type="mn">
+                    <div class="section__img">
+                        <img src="/imagines/mn4.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop Asus Vivobook
+                    </div>
+                    <div class="section__price">
+                        15.290.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong> Core i5 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  16GB <br>
+                        <strong> Card Đồ Họa: </strong> Intel HD Graphics <br>
+                        <strong>Kích thước: </strong> 35.97 x 23.25 x 1.99 ~ 1.99 cm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+
+                <div class="section__card" type="mn">
+                    <div class="section__img">
+                        <img src="/imagines/mn5.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop Lenovo IdeaPad Slim 5
+                    </div>
+                    <div class="section__price">
+                        21.190.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong> Ryzen AI 5 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  24 GB <br>
+                        <strong> Card Đồ Họa: </strong> AMD Radeon 840M Graphics <br>
+                        <strong>Kích thước: </strong> 313.4 x 222 x 16.9 mm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+
+                <div class="section__card" type="dn">
+                    <div class="section__img">
+                        <img src="/imagines/dn1.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop HP Pavilion 15
+                    </div>
+                    <div class="section__price">
+                        17.490.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong> Core i5 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  16 GB  <br>
+                        <strong> Card Đồ Họa: </strong> Intel UHD Graphics <br>
+                        <strong>Kích thước: </strong> 36.02 x 23.4 x 1.8 cm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+
+                <div class="section__card" type="dn">
+                    <div class="section__img">
+                        <img src="/imagines/dn2.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop HP ProBook 450
+                    </div>
+                    <div class="section__price">
+                        19.990.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong> Core i5 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  16 GB  <br>
+                        <strong> Card Đồ Họa: </strong> Intel Iris Xe Graphics <br>
+                        <strong>Kích thước: </strong> 31.86 x 22.43 x 1.7 cm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+
+                <div class="section__card" type="dn">
+                    <div class="section__img">
+                        <img src="/imagines/dn3.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop Lenovo IdeaPad Slim 5
+                    </div>
+                    <div class="section__price">
+                        25.490.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong> Ultra 7 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  16 GB  <br>
+                        <strong> Card Đồ Họa: </strong> Intel Arc Graphics <br>
+                        <strong>Kích thước: </strong> 312 x 221 x 16.9 mm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+
+                <div class="section__card" type="dn">
+                    <div class="section__img">
+                        <img src="/imagines/dn4.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop Asus Vivobook S 14
+                    </div>
+                    <div class="section__price">
+                        17.490.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong> Ultra 5 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  16 GB  <br>
+                        <strong> Card Đồ Họa: </strong> Intel Evo Platform <br>
+                        <strong>Kích thước: </strong> 31.05 x 22.19 x 1.39 ~ 1.59 cm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+
+                <div class="section__card" type="dn">
+                    <div class="section__img">
+                        <img src="/imagines/dn5.png" alt="">
+                    </div>
+                    <div class="section__name">
+                        Laptop Lenovo IdeaPad Slim 5
+                    </div>
+                    <div class="section__price">
+                        23.990.000 đ
+                    </div>
+                    <div class="section__prdetail">
+                        <i class="fa-solid fa-microchip"></i> 
+                        <strong> CPU: </strong> Ryzen 7 <br>
+                        <i class="fa-solid fa-memory"></i>
+                        <strong> RAM: </strong>  32 GB  <br>
+                        <strong> Card Đồ Họa: </strong> AMD Radeon 680M Graphics <br>
+                        <strong>Kích thước: </strong> 339.33 x 236 x 15.6 mm
+                    </div>
+                    <div class="section__detail">
+                        Xem chi tiết
+                    </div>
+                    <div class="section__addcart">
+                        Thêm vào giỏ hàng
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>LAP SÌ TOO</h3>
+      <p>LAP SÌ TO LUÔN CUNG CẤP CHO CÁC BẠN SINH VIÊN, CÁC ANH CHỊ CÔNG, NHÂN VIÊN, NHÀ DOANH NHÂN, CÁC ANH CHỊ EM TRONG NGÀNH NGHỀ NHƯNG MẪU LAPTOP THÔNG DỤNG, HOT HIT NHẤT TRÊN THI TRƯỜNG..........</p>
+      <button class="footer-btn">Back to Top</button>
+    </div>
+    <div class="footer-section">
+      <h3>Tại Lap Sì To </h3>
+      <ul>
+        <li>LAP TOP TICH HOP AI</li>
+        <li>LAPTOP GAMING SIEU CHIEN</li>
+        <li>LAPTOP GIA SIEU SINH VIEN</li>
+        <li>LAPTOP SIEU MONG AND NHE</li>
+        <li>LAPTOP DOANH NHAN</li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Contact Me</h3>
+      <ul>
+        <li><span>📧</span> trung0202427@gmail.com</li>
+        <li><span>📍</span> Cự Khối, Long Biên, Hà Lội</li>
+        <li><span>🌐</span> Social</li>
+      </ul>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <a href="#" class="privacy-policy">Privacy Policy</a>
+  </div>
+</footer>
+
+</body>
+</html>

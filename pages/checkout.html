@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <script src="/scripts/checkout.js" defer></script>
+    <link rel="stylesheet" href="/styles/checkout.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán Đơn Hàng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSB7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h2>Lap Store <i class="fa-solid fa-laptop"></i></h2>
+        <nav>
+           <a href="/pages/home.page.html" class="active">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="/pages/cart.page.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>  
+        </nav>
+    </header>
+    <main>
+        </div><div class="section">
+            <h3><i class="fa-solid fa-location-dot"></i> Địa chỉ nhận hàng</h3>
+            <div class="address-form">
+                <div>
+                    <label for="name">Họ và tên</label>
+                    <input type="text" id="name" placeholder="Nguyễn Văn A" value="Nguyễn Văn A">
+                </div>
+                <div>
+                    <label for="phone">Số điện thoại</label>
+                    <input type="tel" id="phone" placeholder="(84) 123 456 789" value="(84) 123 456 789">
+                </div>
+                <div>
+                    <label for="address">Địa chỉ</label>
+                    <input type="text" id="address" placeholder="123 Đường Láng, Đống Đa, Hà Nội" value="123 Đường Láng, Đống Đa, Hà Nội">
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3><i class="fa-solid fa-box"></i> Sản phẩm</h3>
+            <div id="product-list"></div>
+        </div>
+        <div class="section">
+            <h3><i class="fa-solid fa-credit-card"></i> Phương thức thanh toán</h3>
+            <div class="payment-method">
+                <div class="payment-option">
+                    <input type="radio" name="payment" id="cod" value="cod" checked>
+                    <label for="cod">Thanh toán khi nhận hàng (COD)</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" name="payment" id="shopeepay" value="shopeepay">
+                    <label for="shopeepay">Ví Điện Tử</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="order-summary">
+                <p>Tổng tiền hàng: <span id="subtotal"></span></p>
+                <p>Phí vận chuyển: <span>30,000đ</span></p>
+                <p class="total">Tổng thanh toán: <span id="total"></span></p>
+                <button class="place-order" onclick="placeOrder()">Đặt hàng</button>
+            </div>
+        </div>
+    </main>       
+</body>
+</html>
