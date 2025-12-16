@@ -1,42 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="/scripts/cart.js" defer></script>
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/cart.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Giỏ hàng</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-         <h2> Lap Store  <i class="fa-solid fa-laptop"></i></h2>
-        <div class=" search-bar">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type=" search" placeholder="Tìm kiếm ....">
-        </div>
-        <nav>
-           <a href="/pages/home.page.html" class="active">
-                <i class="fa-solid fa-house"></i>
-            </a>
-            <a href="/pages/cart.page.html">
-                <i class="fa-solid fa-cart-shopping"></i>
-            </a>  
-        </nav>
+      <h2>Lap Store <i class="fa-solid fa-laptop"></i></h2>
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type=" search" placeholder="Tìm kiếm ...." />
+      </div>
+      <nav>
+        <a href="/pages/home.page.html" class="active">
+          <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="/pages/cart.page.html">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+      </nav>
     </header>
     <main>
-        <div class="empty-message">Không có sản phẩm nào trong giỏ hàng</div>
-        <div id="root"></div>
-        <div class="cart-summary">
-            <div class="cart-sumlabel"> Tổng số sản phẩm: </div>
-            <span id="quantity" class="cart-sumvalue"></span>
-            <div class="cart-sumlabel">Tổng số tiền:</div>
-            <span id="cost" class="cart-sumvalue"></span>
+      <div class="empty-message">Không có sản phẩm nào trong giỏ hàng</div>
+      <div id="root"></div>
+      <div class="cart-summary">
+        <div class="cart-sumlabel">Tổng số sản phẩm:</div>
+        <span id="quantity" class="cart-sumvalue"></span>
+        <div class="cart-sumlabel">Tổng số tiền:</div>
+        <span id="cost" class="cart-sumvalue"></span>
 
-            <a href="/pages/checkout.html"
-                class="cart-sumCheckout"> Thanh Toán</a>
-        </div>
+        <a href="/pages/checkout.html" class="cart-sumCheckout"> Thanh Toán</a>
+      </div>
     </main>
-</body>
+  </body>
 </html>
